@@ -1,0 +1,158 @@
+body{
+ margin: 0;
+ padding: 0;
+ background: #607D8B;
+}
+
+figure.foto  figcaption{
+   position: absolute;
+   top: 0px;
+   background-color: grey;
+   color: white;
+   width: 95%;
+   height: 10%;
+   padding: 10px;
+   box-sizing: border-box;
+}
+.inicial{
+  width: 620px;
+  height: 307px;
+  background: rgba(0, 0, 0, .2);
+  color: #blue;
+  top: 40%;
+  left: 40%;
+  font-family:  "Arial";
+  font-size: 14px;
+  position: relative;
+  transform: translate(-50%, -50%);
+  padding: 70px 35px;
+  border-radius: 30px;
+}
+.inicial input{
+ width: 100%;
+ margin-bottom: 10px;
+}
+.inicial input[type="text"], input[type="password"], input[type="email"]{
+ border: none;
+ border-bottom: 1px solid #FFFFFF;
+ background: transparent;
+ outline: none;
+ height: 20px;
+ color: #000;
+ font-size: 20px;
+ font-family: "Arial";
+}
+.inicial input: valid ~label{
+}
+label{
+    font-size: 16px;
+    color:#fff;
+    transition:  .5s;
+    top: -18px;
+}
+.inicial input[type="reset"]{
+    background: grey;
+    color: white;
+    padding: 5px 5px;
+    border-radius: 50px;
+    float: right;
+    width: 109px;
+}
+.inicial input[type="submit"]{
+    background: grey;
+    color: white;
+    padding: 5px 5px;
+    border-radius: 50px;
+    float: right;
+    width: 109px;
+}
+.pes{
+    width: 400px;
+    height: 4px;
+    margin: 35px auto;
+    
+}
+.btn{
+     width: 30px;
+     height: 30px;
+     background-color: #2196F3;
+     padding: 2px 6px;
+     cursor: pointer;
+     border-radius: 20px;
+
+}
+#texto{
+    width: 430px;
+    height: 35px;
+    float: left;
+    font-family: "Arial";
+    font-size: 16px;
+    border-radius: 30px;
+   }
+.inicial input[ type="submit"]{
+      clear: both;
+       border: none
+       cursor: pointer;
+}
+@font-face{
+	font-family: 'FontLogo3';
+	src: url("../fonts/Strasua.ttf");
+}
+footer#rodape {
+	clear: both;
+	text-align: center;
+	left: 100px;
+	width: 1362px;
+	margin-left: -10px;
+	margin-top: 25px;
+	height: 95px;
+	border-top: 1px solid #606060;
+	background-color: #9e9e9e;
+	margin-bottom: -20px;
+	padding-top: 15px;
+                     float: center;
+}
+footer#rodape a{
+	text-decoration: none;
+	font-family: 'FontLogo3';
+	color: #eceff1;
+	text-align: center;
+	padding: 5px 10px 5px 10px;
+	margin-left: 25px;
+	transition: background-color 1s;
+}
+footer#rodape h3 {
+	text-decoration: none;
+	font-family: 'FontLogo3';
+                     color: #eceff1;
+	text-align: center;
+	padding: 10px 10px 10px 10px;
+	margin-top: -5px;
+}
+footer#rodape a#fb:hover {
+	background-color: #1565c0;
+	color: white;
+}
+footer#rodape a#insta:hover {
+	background-color: #ec407a;
+	color: white;
+}
+footer#rodape a#twitter:hover {
+	background-color: #03a9f4;
+	color: white;
+}
+footer#cabe {
+	clear: both;
+	text-align: center;
+	left: 50px;
+	width: 1340px;
+	margin-left: -8px;
+	height: 80px;
+	border-top: 1px solid #606060;
+	background-color: #bdbdbd;
+	margin-bottom: -5px;
+	padding-top: 10px;
+                     float: center;
+                     color: #eceff1;
+                     padding: 10px;
+}

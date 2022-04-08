@@ -1,0 +1,62 @@
+body{
+ margin: 0;
+ padding: 0;
+}
+.contacto{
+  width: 600px;
+  height: 570px;
+  background: #03a9f4;
+  color: #blue;
+  top: 50%;
+  left: 50%;
+  font-family:  "Arial";
+  font-size: 14px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  padding: 70px 35px;
+}
+.contacto input{
+ width: 100%;
+ margin-bottom: 10px;
+}
+.contacto input[type="text"], input[type="password"], input[type="number"], input[type="email"]{
+ border: none;
+ border-bottom: 1px solid #9e9e9e;
+ background: transparent;
+ outline: none;
+ height: 20px;
+ color: #000;
+ font-size: 16x;
+ font-family: "Arial";
+}
+.contacto input: valid ~label{
+}
+label{
+    font-size: 18px;
+    color:#fff;
+    transition: .40s;
+    top: -18px;
+}
+button{
+    background: grey;
+    color: white;
+    padding: 5px 5px;
+    border-radius: 50px;
+    float: right;
+}
+.contacto input[type="reset"]{
+    background: grey;
+    color: white;
+    padding: 5px 5px;
+    border-radius: 50px;
+    float: right;
+    width: 90px;
+}
+.contacto input[type="submit"]{
+    background: grey;
+    color: white;
+    padding: 5px 5px;
+    border-radius: 50px;
+    float: right;
+    width: 124px;
+}

@@ -1,0 +1,118 @@
+<html lang = "pt-br">
+<head>
+   <title>P�gina Inicial da Boutique</title>
+   <link rel="stylesheet" href="Pagina Inicial.css">
+</head>
+<style>
+#check{
+   display: none;
+}
+#icone{
+    cursor: pointer;
+    padding: 40px;
+    position: absolute;
+    z-index: 1;
+}
+.barra{
+   background-color: #333;
+  height: 100%;
+  width: 300px;
+  position: absolute;
+  transition: all .2s linear;
+  left:-300px;
+ }
+nav{
+  width: 100%;
+  position: absolute;
+  top:70px;
+}
+nav a{
+  text-decoration: none;
+}
+.link{
+  background-color: #03a9f4;
+  padding: 28px;
+  font-family:  "Times News Roman";
+  font-size: 18px;
+  transition: all .2s linear;
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+  margin-top: 195px;
+}
+.link:hover{
+  background-color: #222;
+}
+#check:checked  ~  .barra{
+   transform: translatex(300px);
+ } 
+#check:checked ~  .barra nav a .link{
+   opacity: 1;
+   margin-top: 0;
+   transition-delay: .2s;
+}
+#check:checked ~  .barra nav label .link{
+   opacity: 1;
+   margin-top: 0;
+   transition-delay: .2s;
+}
+ �*/Sobre para ficar separado das cores*/
+.link ul li a{
+  background-color: #ffffff;
+  height: 10px;
+}
+.imageem{
+  background-color: #ffffff;
+}
+</style>
+</head>
+<body>
+   <input type="checkbox" id="check">
+<label  id="icone" for="check"><img src="icone.png"></label>
+<div class="barra"><br>
+<nav>
+ <a href="P�gina inicial da Boutique.html"><div class="link">Home</div></a>
+ <a href="Boutique Sobre.html"><div class="link">Sobre</div></a>
+ <label><div class="link">Produtos Disponivel</label>
+   <ul>
+     <li><a href="Roupas e Cal�ados Masculinos.html">Roupas e Cal�ados Masculinos</a></li><br>
+     <li><a href="Roupas e Cal�ados Femininos.html">Roupas e Cal�ados Femininos</a></li>
+  </ul>
+</div>
+<a href="Boutique Cadastro.html"><div class="link">Cadastrar</div></a>
+</nav>
+</div>
+</style>
+<body>
+<footer id="cabe">
+               <div class="im">
+                <img src="img/jaja.jpg" height="85" width="560">
+              </div>
+ </footer>
+</figure>
+<form action="">
+  <div class="pes">
+   <input type="search" id="texto"  list="pro"placeholder="Pesquisar alguns produtos disponiveis...">
+      <datalist id="pro">
+             <option value="Camisola da Nike"></option>
+             <option value="Fato Completo"></option>
+             <option value="Tenis da Nike"></option>
+             <option value="Jaqueta Feminina"></option>
+            <option value="Cole��o de Cal�ados"></option>
+             <option value="Short Jeans"></option>
+      </datalist>
+ </div>
+</form><br><br>
+<div class="imageem">
+   <p align="center"><img  id="slide"src="img/jaja.jpg" width="530"height="400"><br></p>
+   <script>
+    var imagens = ["img/jaja.jpg","Bou.jpg","img/manga.jpg","img/fem.jpg","img/short.jpg","img/casa.jpg","img/jaqueta.jpg","img/produto.jpg","img/piso.jpg","img/cas.jpg"];
+    var imgAtual = 0;
+	
+    function trocaImg(){
+	imgAtual = (imgAtual + 1) %10;
+	document.getElementById("slide").src = imagens[imgAtual];
+    }
+    setInterval(trocaImg, 2000);
+  </script>
+</body>
+</html>

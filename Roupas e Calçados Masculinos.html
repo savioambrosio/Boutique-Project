@@ -1,0 +1,282 @@
+<html>
+<head>
+<title>Roupas</title>
+<link rel="stylesheet" type="text/css" href="Roupa.css">
+</head>
+<style>
+#check{
+   display: none;
+}
+#icone{
+    cursor: pointer;
+    padding: 20px;
+    position: absolute;
+    z-index: 1;
+}
+.barra{
+   background-color: #333;
+  height: 210%;
+   width: 300px;
+  position: absolute;
+  transition: all .2s linear;
+  left:-300px;
+ }
+nav{
+  width: 100%;
+  position: absolute;
+  top:70px;
+}
+nav a{
+  text-decoration: none;
+}
+.link{
+  background-color: #03a9f4;
+  padding: 28px;
+  font-family:  "Times News Roman";
+  font-size: 18px;
+  transition: all .2s linear;
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+  margin-top: 195px;
+}
+.link:hover{
+  background-color: #222;
+}
+#check:checked  ~  .barra{
+   transform: translatex(300px);
+ } 
+#check:checked ~  .barra nav a .link{
+   opacity: 1;
+   margin-top: 0;
+   transition-delay: .2s;
+}
+#check:checked ~  .barra nav label .link{
+   opacity: 1;
+   margin-top: 0;
+   transition-delay: .2s;
+}
+  ¨*/Sobre para ficar separado das cores*/
+.link ul li a{
+  background-color: #ffffff;
+  height: 10px;
+}
+.imageem{
+  background-color: #ffffff;
+}
+.link ul{
+      width: 85%;
+      font-family:  "Times News Roman";
+      font-size: 16px;
+      font-color:  #03a9f4;
+      background-color: white;
+      padding: 25px;
+      border-bottom: 2px solid grey;
+ }
+.link ul li{
+      color:  #03a9f4;
+}
+</style>
+</head>
+<body>
+   <input type="checkbox" id="check">
+<label  id="icone" for="check"><img src="icone.png"></label>
+<div class="barra"><br>
+<nav>
+ <a href="Página inicial da Boutique.html"><div class="link">Home</div></a>
+ <a href="Boutique Sobre.html"><div class="link">Sobre</div></a>
+ <label><div class="link">Produtos Disponivel</label>
+   <ul>
+     <li><a href="Roupas e Calçados Masculinos.html">Roupas e Calçados Masculinos</a></li><br>
+     <li><a href="Roupas e Calçados Femininos.html">Roupas e Calçados Femininos</a></li>
+  </ul>
+</div>
+<a href="Boutique Cadastro.html"><div class="link">Cadastrar</div></a>
+</nav>
+</div>
+</style>
+<body bgcolor="#03a9f4">
+ <div id="texto">
+     <h1>Roupas e Calçados Masculinos<h1>
+</div><br><br><br><br>
+             <div class="roupas">
+                <div class="img">
+                    <img src="img/nk.jpg" alt="Uma imagem">
+                </div>
+                <div id="texto">
+                    <h1>Camisola da Nike</h1>
+                    <h4>18.000kz</h4>
+             </div>
+             <div class="bt">
+                  <button type="guardar"onclick="alert( `Pedido recibido!Caro Cliente por enquanto este Item não está a venda Online para mais informações Disca algum número ou acesso ao nosso site,Muito Obrigada!`)">Comprar Agora</button> &nbsp;&nbsp;&nbsp;
+            </div>
+            </div>
+            <div class="roupas">
+                <div class="img">
+                    <img src="img/cas.jpg" alt="Uma imagem">
+                </div>
+                <div id="texto">
+                    <h1>Casaco Balman</h1>
+                    <h4>27.000kz</h4>
+             </div>
+             <div class="bt">
+               <button type="guardar"onclick="alert( `Pedido recibido!Caro Cliente por enquanto este Item não está a venda Online para mais informações Disca algum número ou acesso ao nosso site,Muito Obrigada!`)">Comprar Agora</button> &nbsp;&nbsp;&nbsp;
+            </div>
+            </div>
+          <div class="roupas">
+                <div class="img">
+                    <img src="img/fato.jpg" alt="Uma imagem">
+                </div>
+                <div id="texto">
+                    <h1>Fato Social</h1>
+                    <h4>70.000kz</h4>
+             </div>
+             <div class="bt">
+                   <button type="guardar"onclick="alert( `Pedido recibido!Caro Cliente por enquanto este Item não está a venda Online para mais informações Disca algum número ou acesso ao nosso site,Muito Obrigada!`)">Comprar Agora</button> &nbsp;&nbsp;&nbsp;
+            </div>
+            </div>
+         <div class="roupas">
+                <div class="img">
+                    <img src="img/ftc.jpg" alt="Uma imagem">
+                </div>
+                <div id="texto">
+                    <h1>Fato Completo</h1>
+                    <h4>90.000kz</h4>
+             </div>
+             <div class="bt">
+                   <button type="guardar"onclick="alert( `Pedido recibido!Caro Cliente por enquanto este Item não está a venda Online para mais informações Disca algum número ou acesso ao nosso site,Muito Obrigada!`)">Comprar Agora</button> &nbsp;&nbsp;&nbsp;
+            </div>
+            </div>
+        <div class="roupas">
+                <div class="img">
+                    <img src="img/xadrez.jpg" alt="Uma imagem">
+                </div>
+                <div id="texto">
+                    <h1>Camisola Xadrez</h1>
+                    <h4>25.000kz</h4>
+             </div>
+             <div class="bt">
+                <button type="guardar"onclick="alert( `Pedido recibido!Caro Cliente por enquanto este Item não está a venda Online para mais informações Disca algum número ou acesso ao nosso site,Muito Obrigada!`)">Comprar Agora</button> &nbsp;&nbsp;&nbsp;
+            </div>
+            </div><br><br><br>
+       <div class="roupas">
+                <div class="img">
+                    <img src="img/ca4.jpg" alt="Uma imagem">
+                </div>
+                <div id="texto">
+                    <h1>Tenis Gucci</h1>
+                    <h4>45.000kz</h4>
+             </div>
+             <div class="bt">
+                  <button type="guardar"onclick="alert( `Pedido recibido!Caro Cliente por enquanto este Item não está a venda Online para mais informações Disca algum número ou acesso ao nosso site,Muito Obrigada!`)">Comprar Agora</button> &nbsp;&nbsp;&nbsp;
+            </div>
+            </div>
+            <div class="roupas">
+                <div class="img">
+                    <img src="img/vitom.jpg" alt="Uma imagem">
+                </div>
+                <div id="texto">
+                    <h1>Tenis Luis Vittom</h1>
+                    <h4>35.000kz</h4>
+             </div>
+             <div class="bt">
+               <button type="guardar"onclick="alert( `Pedido recibido!Caro Cliente por enquanto este Item não está a venda Online para mais informações Disca algum número ou acesso ao nosso site,Muito Obrigada!`)">Comprar Agora</button> &nbsp;&nbsp;&nbsp;
+            </div>
+            </div>
+          <div class="roupas">
+                <div class="img">
+                    <img src="img/piso.jpg" alt="Uma imagem">
+                </div>
+                <div id="texto">
+                    <h1>Tenis Nike</h1>
+                    <h4>50.000kz</h4>
+             </div>
+             <div class="bt">
+                   <button type="guardar"onclick="alert( `Pedido recibido!Caro Cliente por enquanto este Item não está a venda Online para mais informações Disca algum número ou acesso ao nosso site,Muito Obrigada!`)">Comprar Agora</button> &nbsp;&nbsp;&nbsp;
+            </div>
+            </div>
+         <div class="roupas">
+                <div class="img">
+                    <img src="img/razo.jpg" alt="Uma imagem">
+                </div>
+                <div id="texto">
+                    <h1>Tenis Razo</h1>
+                    <h4>30.000kz</h4>
+             </div>
+             <div class="bt">
+                   <button type="guardar"onclick="alert( `Pedido recibido!Caro Cliente por enquanto este Item não está a venda Online para mais informações Disca algum número ou acesso ao nosso site,Muito Obrigada!`)">Comprar Agora</button> &nbsp;&nbsp;&nbsp;
+            </div>
+            </div>
+        <div class="roupas">
+                <div class="img">
+                    <img src="img/nike.jpg" alt="Uma imagem">
+                </div>
+                <div id="texto">
+                    <h1>Tenis Nike</h1>
+                    <h4>45.000kz</h4>
+             </div>
+             <div class="bt">
+                <button type="guardar"onclick="alert( `Pedido recibido!Caro Cliente por enquanto este Item não está a venda Online para mais informações Disca algum número ou acesso ao nosso site,Muito Obrigada!`)">Comprar Agora</button> &nbsp;&nbsp;&nbsp;
+            </div>
+            </div><br><br><br>
+ <div class="roupas">
+                <div class="img">
+                    <img src="img/sanda.jpg" alt="Uma imagem">
+                </div>
+                <div id="texto">
+                    <h1>Sandália</h1>
+                    <h4>24.000kz</h4>
+             </div>
+             <div class="bt">
+                  <button type="guardar"onclick="alert( `Pedido recibido!Caro Cliente por enquanto este Item não está a venda Online para mais informações Disca algum número ou acesso ao nosso site,Muito Obrigada!`)">Comprar Agora</button> &nbsp;&nbsp;&nbsp;
+            </div>
+            </div>
+            <div class="roupas">
+                <div class="img">
+                    <img src="img/messi7.jpg" alt="Uma imagem">
+                </div>
+                <div id="texto">
+                    <h1>Camisola</h1>
+                    <h4>50.000kz</h4>
+             </div>
+             <div class="bt">
+               <button type="guardar"onclick="alert( `Pedido recibido!Caro Cliente por enquanto este Item não está a venda Online para mais informações Disca algum número ou acesso ao nosso site,Muito Obrigada!`)">Comprar Agora</button> &nbsp;&nbsp;&nbsp;
+            </div>
+            </div>
+          <div class="roupas">
+                <div class="img">
+                <img src="img/sa.jpg" alt="Uma imagem">
+                </div>
+                <div id="texto">
+                    <h1>Sapato</h1>
+                    <h4>60.000kz</h4>
+             </div>
+             <div class="bt">
+                   <button type="guardar"onclick="alert( `Pedido recibido!Caro Cliente por enquanto este Item não está a venda Online para mais informações Disca algum número ou acesso ao nosso site,Muito Obrigada!`)">Comprar Agora</button> &nbsp;&nbsp;&nbsp;
+            </div>
+            </div>
+         <div class="roupas">
+                <div class="img">
+                    <img src="img/images.jpg" alt="Uma imagem">
+                </div>
+                <div id="texto">
+                    <h1>Fato Completo</h1>
+                    <h4>26.000kz</h4>
+             </div>
+             <div class="bt">
+                   <button type="guardar"onclick="alert( `Pedido recibido!Caro Cliente por enquanto este Item não está a venda Online para mais informações Disca algum número ou acesso ao nosso site,Muito Obrigada!`)">Comprar Agora</button> &nbsp;&nbsp;&nbsp;
+            </div>
+            </div>
+        <div class="roupas">
+                <div class="img">
+                   <img src="img/ft.jpg" alt="Uma imagem">
+                </div>
+                <div id="texto">
+                    <h1>Fato Social</h1>
+                    <h4>80.000kz</h4>
+                 </div>
+             <div class="bt">
+                <button type="guardar"onclick="alert( `Pedido recibido!Caro Cliente por enquanto este Item não está a venda Online para mais informações Disca algum número ou acesso ao nosso site,Muito Obrigada!`)">Comprar Agora</button> &nbsp;&nbsp;&nbsp;
+            </div>
+            </div><br><br><br>
+</body>
+</html>

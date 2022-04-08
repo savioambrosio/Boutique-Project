@@ -1,0 +1,137 @@
+<html>
+<head>
+<title>Boutique Cadastrar</title>
+<link rel="stylesheet" href="Cadastro.css">
+<head>
+<style>
+#check{
+   display: none;
+}
+#icone{
+    cursor: pointer;
+    padding: 35px;
+    position: absolute;
+    z-index: 1;
+}
+.barra{
+   background-color: #333;
+   height: 105%;
+   width: 300px;
+  position: absolute;
+  transition: all .2s linear;
+  left:-300px;
+ }
+nav{
+  width: 100%;
+  position: absolute;
+  top:70px;
+}
+nav a{
+  text-decoration: none;
+}
+.link{
+  background-color: #03a9f4;
+  padding: 28px;
+  font-family:  "Times News Roman";
+  font-size: 18px;
+  transition: all .2s linear;
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+  margin-top: 195px;
+}
+.link:hover{
+  background-color: #222;
+}
+#check:checked  ~  .barra{
+   transform: translatex(300px);
+ } 
+#check:checked ~  .barra nav a .link{
+   opacity: 1;
+   margin-top: 0;
+   transition-delay: .2s;
+}
+#check:checked ~  .barra nav label .link{
+   opacity: 1;
+   margin-top: 0;
+   transition-delay: .2s;
+}
+  ¨*/Sobre para ficar separado das cores*/
+.link ul li a{
+  background-color: #ffffff;
+  height: 10px;
+}
+.imageem{
+  background-color: #ffffff;
+}
+.link ul{
+      width: 85%;
+      font-family:  "Times News Roman";
+      font-size: 16px;
+      font-color:  #03a9f4;
+      background-color: white;
+      padding: 25px;
+      border-bottom: 2px solid grey;
+ }
+.link ul li{
+      color:  #03a9f4;
+}
+</style>
+</head>
+<body>
+   <input type="checkbox" id="check">
+<label  id="icone" for="check"><img src="icone.png"></label>
+<div class="barra"><br>
+<nav>
+ <a href="Página inicial da Boutique.html"><div class="link">Home</div></a>
+ <a href="Boutique Sobre.html"><div class="link">Sobre</div></a>
+ <label><div class="link">Produtos Disponivel</label>
+   <ul>
+     <li><a href="Roupas e Calçados Masculinos.html">Roupas e Calçados Masculinos</a></li><br>
+     <li><a href="Roupas e Calçados Femininos.html">Roupas e Calçados Femininos</a></li>
+  </ul>
+</div>
+<a href="Boutique Cadastro.html"><div class="link">Cadastrar</div></a>
+</nav>
+</div>
+</style>
+<body background="Bou.jpg"> 
+   <div class="contacto">
+      <h1 align="center"><font color="white">Cadastro de Clientes</font></h1><br><br><br>
+       <form action="" method="post">
+         <label>Nome</label><br><br>
+        <input type="text" name="" placeholder="digite o seu nome caro cliente" maxlength="40" required><br>
+        <label>E-mail</label><br><br>
+        <input type="email" name="" placeholder="digite o seu E-mail" list="gmail" required><br>
+            <datalist id="gmail">
+                   <option value="savioambrosio2019@gmail.com"></option>
+                   <option value="jaredabderval2018@gmail.com"></option>
+          </datalist>
+        <label>Contacto</label><br><br>
+        <input type="text" name="" placeholder="digite o seu contacto" maxlength="9" required><br>
+        <label>Idade</label><br><br>
+        <input type="number" name="" placeholder="digite a sua idade" maxlength="3" required><br>
+        <label>Pais</label><br>
+       <select name="pais">
+       <option value="angola">Angola</option>
+       <option value="brazil">Brazil</option>
+       <option value="espanha">Espanha</option>
+       <option value="eua">E.U.A</option>
+       <option value="japão">Japão</option>
+       <option value="africa">Africa do Sul</option>
+       <option value="portugal">Portugal</option>
+       <option value="moçambique">Moçambique</option>
+     </select><br><br>
+       <label>Endereço</label><br><br>
+        <input type="text" name="" placeholder="digite o seu endereço caro cliente" required><br>
+       <label>Senha</label><br>
+       <input type="password" name="" placeholder="digite a sua senha" maxlength="15" required><br><br>
+       <input type="reset" value="Limpar">
+    </form>
+  <a href="Página inicial da Boutique.html">
+         <input type="submit" value="Voltar para o Login">
+    </a>
+    </form><br>
+  <button type="guardar"onclick="alert( `Dados Guardados com sucesso, Bem Vindo a Página oficial da Boutique Savissol!`)">Guardar os dados</button> &nbsp;&nbsp;&nbsp;
+   </div>
+</body>
+</html>

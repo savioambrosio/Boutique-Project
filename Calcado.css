@@ -1,0 +1,30 @@
+.calcado{
+    width: 212px;
+    height: 355px;
+    padding: 8px;
+    box-shadow:  2px 2px 2px 2px;
+    border: 1px solid white;
+    display: inline-block;
+    margin-left: 10px;
+}
+.img img{
+    width: 210px;
+    height: 210px;
+     img-align: center;
+}
+div#texto{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+div#texto h1{
+    font-size: 14pt;
+   color: white;
+
+}
+div#texto h4{
+    font-size: 12pt;
+    font-size: arial;
+    color: black;
+}
+.bt{
+      text-align: center;
+}
